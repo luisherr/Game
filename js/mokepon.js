@@ -132,20 +132,18 @@ function revisarVidas() {
 
 function crearMensaje(resultado) {
     let sectionMensajes = document.getElementById('resultado')
-    let ataqueJugador = document.getElementById('ataque-jugador')
-    let ataqueEnemigo = document.getElementById('ataque-enemigo')
-
-    let notificacion = document.createElement('p')    
+    let ataquesJugador = document.getElementById('ataque-jugador')
+    let ataquesEnemigo = document.getElementById('ataque-enemigo')
+ 
     let nuevoAtaqueJugador = document.createElement('p')
     let nuevoAtaqueEnemigo = document.createElement('p')
 
     sectionMensajes.innerHTML = resultado
-    nuevoAtaqueJugador.innerHTML = ataqueJugador.outerHTML
-    nuevoAtaqueEnemigo.innerHTML = ataqueEnemigo.outerHTML
+    nuevoAtaqueJugador.innerHTML = ataqueJugador
+    nuevoAtaqueEnemigo.innerHTML = ataqueEnemigo
 
-    sectionMensajes.appendChild(notificacion)
-    ataqueJugador.appendChild(nuevoAtaqueJugador)
-    ataqueEnemigo.appendChild(nuevoAtaqueEnemigo)
+    ataquesJugador.appendChild(nuevoAtaqueJugador)
+    ataquesEnemigo.appendChild(nuevoAtaqueEnemigo)
 }
 
 function crearMensajeFinal(resultadoFinal) {
