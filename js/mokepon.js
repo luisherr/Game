@@ -66,17 +66,17 @@ function SeleccionarMascotaEnemigo() {
 }
 
 function ataqueFuego() {
-    ataqueJugador = 'FUEGO'
+    ataqueJugador = 'FUEGO 🔥'
     ataqueAleatorioEnemigo()
 }
 
 function ataqueAgua() { 
-    ataqueJugador = 'AGUA'
+    ataqueJugador = 'AGUA 🌊'
     ataqueAleatorioEnemigo()
 }
 
 function ataqueTierra() {
-    ataqueJugador = 'TIERRA'
+    ataqueJugador = 'TIERRA 🌱'
     ataqueAleatorioEnemigo()
 }
 
@@ -84,11 +84,11 @@ function ataqueAleatorioEnemigo() {
     let ataqueAleatorio = aleatorio(1,3)
 
     if (ataqueAleatorio == 1) {
-        ataqueEnemigo = 'FUEGO'
+        ataqueEnemigo = 'FUEGO 🔥'
     } else if (ataqueAleatorio == 2) {
-        ataqueEnemigo = 'AGUA'
+        ataqueEnemigo = 'AGUA 🌊'
     } else {
-        ataqueEnemigo = 'TIERRA'
+        ataqueEnemigo = 'TIERRA 🌱'
     }
 
     combate()
